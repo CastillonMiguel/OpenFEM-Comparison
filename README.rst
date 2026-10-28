@@ -2,7 +2,7 @@ OpenFEM-Comparison
 ==================
 
 .. image:: https://raw.githubusercontent.com/CastillonMiguel/OpenFEM-Comparison/main/docs/source/_static/logo.png
-   :target: https://OpenFEM-Comparison.readthedocs.io/en/latest/index.html
+   :target: https://openfem-comparison.readthedocs.io
    :alt: OpenFEM-Comparison
    :width: 200px
 
@@ -12,6 +12,14 @@ compare different open-source Finite Element (FEM) software. The same
 problem (geometry, mesh, material properties and boundary conditions) is
 solved independently with each FEM code, and the results are then compared
 against each other.
+
+.. image:: https://readthedocs.org/projects/openfem-comparison/badge/?version=latest
+    :target: https://openfem-comparison.readthedocs.io
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/license/CastillonMiguel/OpenFEM-Comparison
+    :target: https://github.com/CastillonMiguel/OpenFEM-Comparison/blob/main/LICENSE
+    :alt: License
 
 
 Introduction
