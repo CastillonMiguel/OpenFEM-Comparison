@@ -1,0 +1,40 @@
+name: phasefieldx-docs-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - scifem
+  - pandas
+  - sympy
+  - numpy
+  - vtk
+  - scooby>=0.5.1
+  - meshio
+  - matplotlib
+  - imageio>=2.5.0
+  - imageio-ffmpeg
+  - colorcet
+  - cmocean
+  - tqdm
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - codecov
+  - hypothesis>=5.8.0
+  - pip
+  - trimesh
+  - rtree
+  - pyembree
+  - pooch
+  - pyvista  
+  - trame
+  - trame-vtk
+  - trame-vuetify
+  - jupyterlab
+  - jupyter-sphinx
+  - ipywidgets
+  - typing-extensions
+  - pip:
+      - pytest-memprof
+      - -r requirements.txt
+      - phasefieldx

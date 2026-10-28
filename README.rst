@@ -1,6 +1,11 @@
 OpenFEM-Comparison
 ==================
 
+.. image:: https://raw.githubusercontent.com/CastillonMiguel/OpenFEM-Comparison/main/docs/source/_static/logo_name.png
+   :target: https://OpenFEM-Comparison.readthedocs.io/en/latest/index.html
+   :alt: OpenFEM-Comparison
+
+
 Welcome to **OpenFEM-Comparison**, a collection of benchmark problems used to
 compare different open-source Finite Element (FEM) software. The same
 problem (geometry, mesh, material properties and boundary conditions) is
