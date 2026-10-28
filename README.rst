@@ -1,7 +1,7 @@
 OpenFEM-Comparison
 ==================
 
-.. image:: https://raw.githubusercontent.com/CastillonMiguel/OpenFEM-Comparison/main/docs/source/_static/logo_name.png
+.. image:: https://raw.githubusercontent.com/CastillonMiguel/OpenFEM-Comparison/main/docs/source/_static/logo.png
    :target: https://OpenFEM-Comparison.readthedocs.io/en/latest/index.html
    :alt: OpenFEM-Comparison
 
