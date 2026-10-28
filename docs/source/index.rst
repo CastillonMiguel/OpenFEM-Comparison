@@ -94,9 +94,7 @@ free to open an issue or a pull request.
 
 .. footbibliography::
 
-.. .. toctree::
+.. toctree::
 
-..    getting-started/index
-..    theory/index
-..    auto_examples/index
-..    extras/index
+   auto_examples/index
+   extras/index
