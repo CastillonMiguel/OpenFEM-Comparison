@@ -4,6 +4,7 @@ OpenFEM-Comparison
 .. image:: https://raw.githubusercontent.com/CastillonMiguel/OpenFEM-Comparison/main/docs/source/_static/logo.png
    :target: https://OpenFEM-Comparison.readthedocs.io/en/latest/index.html
    :alt: OpenFEM-Comparison
+   :width: 200px
 
 
 Welcome to **OpenFEM-Comparison**, a collection of benchmark problems used to
