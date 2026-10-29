@@ -16,7 +16,7 @@
 
 import os
 import sys
-# sys.path.insert(0, os.path.abspath('../../src/OpenFEM-Comparison'))
+sys.path.insert(0, os.path.abspath('../../src/OpenFEM-Comparison'))
 
 
 # -- Project information -----------------------------------------------------
@@ -233,11 +233,11 @@ html_theme_options = {
     "footer_start": ["sphinx-version"],
     "github_url": "https://github.com/CastillonMiguel/OpenFEM-Comparison",
     "navbar_align": "left",
-    # 'icon_links': [
-    #     {
-    #         'name': 'Contributing',
-    #         'url':  'https://github.com/CastillonMiguel/OpenFEM-Comparison/blob/main/CONTRIBUTING.rst',
-    #         'icon': 'fa fa-gavel fa-fw',
-    #     },
-    # ],
+    'icon_links': [
+        {
+            'name': 'Contributing',
+            'url':  'https://github.com/CastillonMiguel/OpenFEM-Comparison/blob/main/CONTRIBUTING.rst',
+            'icon': 'fa fa-gavel fa-fw',
+        },
+    ],
 }
