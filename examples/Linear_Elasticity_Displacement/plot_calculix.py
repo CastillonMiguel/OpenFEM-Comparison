@@ -13,7 +13,6 @@ which reads ``calculix.inp`` and produces the result files (``calculix.frd``,
 .. literalinclude:: ../../../../examples/Linear_Elasticity_Displacement/calculix/calculix.inp
    :language: text
 
-   
 Convert the .frd results to a ParaView-readable .vtu/.vtk file with:
    ccx2paraview calculix.frd vtu
 
@@ -45,7 +44,7 @@ with open(calculix_dat_file) as f:
 # The reaction force table starts two lines below the header
 # ``forces (fx,fy,fz) for set BOTTOM ...`` (one blank line in between) and
 # ends at the next blank line. Each row contains the node number and the
-# reaction force components (Rx, Ry, Rz) at that node.
+# reaction force components (Rx, Ry, Rz) at each node.
 reaction_forces = []
 for i, line in enumerate(dat_lines):
     if line.strip().startswith("forces") and "BOTTOM" in line:
@@ -56,7 +55,16 @@ for i, line in enumerate(dat_lines):
             reaction_forces.append((int(node), float(rx), float(ry), float(rz)))
         break
 
-reaction_forces = pd.DataFrame(reaction_forces, columns=["node", "Rx", "Ry", "Rz"])
+# Validate that the required reaction-force table was found and contains data.
+if not reaction_forces:
+    raise ValueError(
+        "Missing or empty BOTTOM reaction-force table in calculix.dat"
+    )
+
+reaction_forces = pd.DataFrame(
+    reaction_forces,
+    columns=["node", "Rx", "Ry", "Rz"],
+)
 print("Reaction forces on the bottom edge:")
 print(reaction_forces.to_string(index=False))
 
@@ -72,10 +80,17 @@ print(f"\nSum of reaction forces: Rx = {Rx_total:.6e}, "
 # ^^^^^^^^^^^^^
 # The total strain energy is the single value printed two lines below the
 # header ``total internal energy for set SPECIMEN ...``.
+strain_energy = None
 for i, line in enumerate(dat_lines):
     if line.strip().startswith("total internal energy"):
         strain_energy = float(dat_lines[i + 2])
         break
+
+# Validate that the required total internal energy was found.
+if strain_energy is None:
+    raise ValueError(
+        "Missing total internal energy in calculix.dat"
+    )
 
 print(f"\nTotal strain energy: {strain_energy:.6e} kN\u00b7mm")
 
