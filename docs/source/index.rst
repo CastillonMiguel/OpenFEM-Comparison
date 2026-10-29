@@ -95,6 +95,7 @@ free to open an issue or a pull request.
 .. footbibliography::
 
 .. toctree::
-
+   
+   FEM_software/index
    auto_examples/index
    extras/index

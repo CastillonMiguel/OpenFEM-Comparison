@@ -1,0 +1,136 @@
+# ---------------------------------------------------------------------------
+# CalculiX CrunchiX build (macOS, Apple Silicon and Intel, Homebrew toolchain)
+# ---------------------------------------------------------------------------
+#
+# Apple's bundled cc/clang cannot compile Fortran, so a GNU toolchain from
+# Homebrew ("brew install gcc") is required; it installs versioned binaries
+# such as gcc-16/gfortran-16. Override on the command line if a different
+# version is installed, e.g.:
+#   make CC=gcc-15 FC=gfortran-15
+#
+# NOTE: plain "=" is required here, not "?=" -- CC and FC already have
+# built-in default values inside GNU Make itself (cc/f77), so "?=" would
+# be a no-op; a command-line override (e.g. "make CC=gcc-15") still wins
+# over this assignment regardless.
+
+.DEFAULT_GOAL := all
+
+CC = gcc-16
+FC = gfortran-16
+
+# Homebrew's prefix differs between Apple Silicon (/opt/homebrew)
+# and Intel Macs (/usr/local). Detect it automatically, falling back
+# to the Apple Silicon default if Homebrew is unavailable.
+
+BREW_PREFIX := $(shell brew --prefix 2>/dev/null)
+ifeq ($(strip $(BREW_PREFIX)),)
+    BREW_PREFIX := /opt/homebrew
+endif
+
+# ---------------------------------------------------------------------------
+# SPOOLES library setup
+# ---------------------------------------------------------------------------
+# 1. Download the SPOOLES 2.2 source archive from:
+#    https://netlib.org/linalg/spooles/spooles.2.2.html
+#
+#    Extract the archive into ../spooles.2.2, relative to this directory.
+#
+
+# 2. Apply the following compatibility fix in transform.c:
+#    Replace:
+#        temp = IVinit(nfront, NULL);
+#    with:
+#        temp = IVinit(nfront, 0);
+#
+#    This fixes an incompatible pointer-to-integer conversion error with
+#    modern compilers, provided IVinit() expects an integer argument.
+#
+# 3. Build the SPOOLES static library from its source directory:
+#        cd ../spooles.2.2
+#        make lib
+#
+#    If the SPOOLES Makefile specifies the obsolete compiler path:
+#        CC = /usr/lang-4.0/bin/cc
+#    replace it with:
+#        CC = cc
+#
+#    The build should generate spooles.a, which is required to link CalculiX.
+# ---------------------------------------------------------------------------
+
+SPOOLES_DIR = ../spooles.2.2
+
+
+# Homebrew library directories (Apple Silicon default: /opt/homebrew).
+# Override these variables if the libraries are installed elsewhere.
+LAPACK_DIR ?= $(BREW_PREFIX)/opt/lapack/lib
+ARPACK_DIR ?= $(BREW_PREFIX)/opt/arpack/lib
+
+# ---------------------------------------------------------------------------
+# Compiler flags
+# ---------------------------------------------------------------------------
+# ARCH controls the Fortran-to-C symbol naming convention used by CalculiX.h.
+# Keep ARCH=Linux as the unquoted token expected by the header's preprocessor
+# conditions, including when compiling on macOS. Do not replace it with
+# ARCH="Darwin" without verifying the corresponding header definitions.
+# ---------------------------------------------------------------------------
+CFLAGS = -Wall -g -I$(SPOOLES_DIR) \
+         -DARCH=Linux -DSPOOLES -DARPACK -DMATRIXSTORAGE \
+         -DNETWORKOUT -fopenmp
+
+FFLAGS = -Wall -g -cpp -fopenmp
+
+# All .o files (and the intermediate .a archive) are generated in this
+# directory instead of alongside the sources; override with
+# "make BUILD_DIR=somewhere" if needed. The final CalculiX executable is
+# still produced in this directory as before.
+# Build directories
+# Build directories
+BUILD_DIR ?= ../build/default
+OBJ_DIR = $(BUILD_DIR)/obj
+BIN_DIR = $(BUILD_DIR)/bin
+
+TARGET = $(BIN_DIR)/CalculiX
+
+$(OBJ_DIR) $(BIN_DIR):
+	mkdir -p $@
+
+# Compile C files
+$(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Compile Fortran files
+$(OBJ_DIR)/%.o: %.f | $(OBJ_DIR)
+	$(FC) $(FFLAGS) -c $< -o $@
+
+include Makefile.inc
+
+SCCXMAIN = CalculiX.c
+
+OCCXF = $(addprefix $(OBJ_DIR)/,$(SCCXF:.f=.o))
+OCCXC = $(addprefix $(OBJ_DIR)/,$(SCCXC:.c=.o))
+OCCXMAIN = $(OBJ_DIR)/CalculiX.o
+OFRD = $(OBJ_DIR)/frd.o
+
+LIBS = \
+    $(SPOOLES_DIR)/spooles.a \
+    $(ARPACK_DIR)/libarpack.dylib \
+    $(LAPACK_DIR)/liblapack.dylib \
+    $(LAPACK_DIR)/libblas.dylib \
+    -lm
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(OFRD): frd.c | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJ_DIR)/CalculiX.a: $(OCCXF) $(OCCXC) $(OFRD) | $(OBJ_DIR)
+	ar r $@ $(OCCXF) $(OCCXC) $(OFRD)
+
+$(TARGET): $(OCCXMAIN) $(OBJ_DIR)/CalculiX.a | $(BIN_DIR)
+	./date.pl
+	$(FC) -Wall -g -o $@ $(OCCXMAIN) $(OBJ_DIR)/CalculiX.a $(LIBS) -fopenmp
+
+clean:
+	rm -rf $(BUILD_DIR)
