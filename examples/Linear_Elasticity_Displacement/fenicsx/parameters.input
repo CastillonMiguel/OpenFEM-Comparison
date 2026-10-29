@@ -1,0 +1,8 @@
+E	210.0
+nu	0.3
+lambda	121.15384615384615
+mu	80.76923076923076
+rho	1.0
+save_solution_xdmf	False
+save_solution_vtu	True
+results_folder_name	fenicsx

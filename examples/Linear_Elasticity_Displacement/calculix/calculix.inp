@@ -1,0 +1,91 @@
+**
+** Linear Elasticity: SENT (Single Edge Notch Tension) specimen
+** -------------------------------------------------------------
+** Square plate with a single-edge notch, fully fixed at the bottom edge
+** and subjected to a prescribed unit vertical displacement on the top
+** edge (displacement-controlled loading). See ../README.rst for the
+** full problem description.
+**
+** Mesh
+** ----
+** Generated with Gmsh from mesh.geo:
+**   gmsh mesh.geo -2 -format inp -o mesh.inp
+** The mesh uses CPE4 elements (4-node, plane strain quadrilaterals) and
+** defines the following sets, used throughout this file:
+**   NSET  bottom, top, specimen   (specimen = all nodes)
+**   ELSET specimen                (all elements)
+*INCLUDE, INPUT=../mesh/mesh.inp
+**
+** Material
+** --------
+** Isotropic linear elastic material "STEEL":
+**   *ELASTIC data line: Young's modulus E [kN/mm2], Poisson's ratio nu [-]
+**   *DENSITY: mass density [t/mm3] (not used in this static analysis)
+*MATERIAL,NAME=STEEL
+*ELASTIC
+210.0, 0.3
+*DENSITY
+0.0
+**
+** Section
+** -------
+** Assigns material "STEEL" to the "specimen" element set. The data line is
+** the section thickness; for plane strain (CPE4 "expanded into a C3D8") elements.
+*SOLID SECTION,ELSET=specimen,MATERIAL=STEEL
+1.
+**
+** Boundary conditions (bottom edge, fixed for the whole analysis)
+** -----------------------------------------------------------------
+** Fully clamped bottom edge: both displacement components are set to
+** zero, ux = uy = 0 (degrees of freedom 1 = x, 2 = y).
+*BOUNDARY
+bottom, 1, 1, 0.
+*BOUNDARY
+bottom, 1, 2, 0.
+**
+** Analysis step
+** -------------
+** Single linear static step applying the prescribed vertical displacement
+** on the top edge. *STATIC data line: initial time increment, total step
+** time, minimum time increment, maximum time increment.
+*STEP
+*STATIC
+0.01, 1.0, 1.E-6, 0.01
+** Top edge: ux = 0 (dof 1) and uy = 1.0 (dof 2), i.e. a unit vertical
+** displacement is prescribed while the horizontal displacement is fixed.
+*BOUNDARY
+top, 1, 1, 0.
+*BOUNDARY
+top, 2, 2, 1.0
+**
+** Output requests (.dat file)
+** ----------------------------
+** Reaction forces (RF) on the fixed bottom edge, used to compare the
+** support reaction with the other solvers.
+*NODE PRINT,NSET=bottom
+RF
+** Nodal displacements (U) over the whole specimen.
+*NODE PRINT,NSET=specimen
+U
+** Stress components (S) per element.
+*EL PRINT,ELSET=specimen
+S
+** Total strain energy: ELSE = elastic strain energy per element,
+** TOTALS=ONLY prints only the sum over the "specimen" set, i.e. the
+** total strain energy of the model, used for comparison between solvers.
+*EL PRINT,ELSET=specimen,TOTALS=ONLY
+ELSE
+**
+** Output requests (.frd file, for ParaView/ccx2paraview post-processing)
+** ------------------------------------------------------------------------
+** Nodal displacements.
+*NODE FILE
+U
+** Element stresses (S) and energy density (ENER).
+*EL FILE
+S, ENER
+*END STEP
+
+** Convert the .frd results to a ParaView-readable .vtu/.vtk file with:
+**   ccx2paraview calculix.frd vtu
+

@@ -1,0 +1,940 @@
+ ELEMENT           25 with label "CPE4    " and with nodes:
+         42         43        103        102
+  is expanded into a "C3D8  E " element with topology:
+        347        350        530        527        349        352        532        529
+
+ ELEMENT           26 with label "CPE4    " and with nodes:
+         43         44        100        103
+  is expanded into a "C3D8  E " element with topology:
+        350        353        521        530        352        355        523        532
+
+ ELEMENT           27 with label "CPE4    " and with nodes:
+        103        100         93        101
+  is expanded into a "C3D8  E " element with topology:
+        530        521        500        524        532        523        502        526
+
+ ELEMENT           28 with label "CPE4    " and with nodes:
+        102        103        101         76
+  is expanded into a "C3D8  E " element with topology:
+        527        530        524        449        529        532        526        451
+
+ ELEMENT           29 with label "CPE4    " and with nodes:
+         90        104        108        107
+  is expanded into a "C3D8  E " element with topology:
+        491        533        545        542        493        535        547        544
+
+ ELEMENT           30 with label "CPE4    " and with nodes:
+        104         95        105        108
+  is expanded into a "C3D8  E " element with topology:
+        533        506        536        545        535        508        538        547
+
+ ELEMENT           31 with label "CPE4    " and with nodes:
+        108        105         69        106
+  is expanded into a "C3D8  E " element with topology:
+        545        536        428        539        547        538        430        541
+
+ ELEMENT           32 with label "CPE4    " and with nodes:
+        107        108        106         99
+  is expanded into a "C3D8  E " element with topology:
+        542        545        539        518        544        547        541        520
+
+ ELEMENT           33 with label "CPE4    " and with nodes:
+         93        109        112        101
+  is expanded into a "C3D8  E " element with topology:
+        500        548        557        524        502        550        559        526
+
+ ELEMENT           34 with label "CPE4    " and with nodes:
+        109         97        110        112
+  is expanded into a "C3D8  E " element with topology:
+        548        512        551        557        550        514        553        559
+
+ ELEMENT           35 with label "CPE4    " and with nodes:
+        112        110         89        111
+  is expanded into a "C3D8  E " element with topology:
+        557        551        488        554        559        553        490        556
+
+ ELEMENT           36 with label "CPE4    " and with nodes:
+        101        112        111         76
+  is expanded into a "C3D8  E " element with topology:
+        524        557        554        449        526        559        556        451
+
+ ELEMENT           37 with label "CPE4    " and with nodes:
+          4         41        114         40
+  is expanded into a "C3D8  E " element with topology:
+        233        344        563        341        235        346        565        343
+
+ ELEMENT           38 with label "CPE4    " and with nodes:
+         41         42        102        114
+  is expanded into a "C3D8  E " element with topology:
+        344        347        527        563        346        349        529        565
+
+ ELEMENT           39 with label "CPE4    " and with nodes:
+        114        102         76        113
+  is expanded into a "C3D8  E " element with topology:
+        563        527        449        560        565        529        451        562
+
+ ELEMENT           40 with label "CPE4    " and with nodes:
+         40        114        113         39
+  is expanded into a "C3D8  E " element with topology:
+        341        563        560        338        343        565        562        340
+
+ ELEMENT           41 with label "CPE4    " and with nodes:
+         86        115        119        118
+  is expanded into a "C3D8  E " element with topology:
+        479        566        578        575        481        568        580        577
+
+ ELEMENT           42 with label "CPE4    " and with nodes:
+        115         88        116        119
+  is expanded into a "C3D8  E " element with topology:
+        566        485        569        578        568        487        571        580
+
+ ELEMENT           43 with label "CPE4    " and with nodes:
+        119        116         81        117
+  is expanded into a "C3D8  E " element with topology:
+        578        569        464        572        580        571        466        574
+
+ ELEMENT           44 with label "CPE4    " and with nodes:
+        118        119        117         74
+  is expanded into a "C3D8  E " element with topology:
+        575        578        572        443        577        580        574        445
+
+ ELEMENT           45 with label "CPE4    " and with nodes:
+         87        120        124        123
+  is expanded into a "C3D8  E " element with topology:
+        482        581        593        590        484        583        595        592
+
+ ELEMENT           46 with label "CPE4    " and with nodes:
+        120         71        121        124
+  is expanded into a "C3D8  E " element with topology:
+        581        434        584        593        583        436        586        595
+
+ ELEMENT           47 with label "CPE4    " and with nodes:
+        124        121         75        122
+  is expanded into a "C3D8  E " element with topology:
+        593        584        446        587        595        586        448        589
+
+ ELEMENT           48 with label "CPE4    " and with nodes:
+        123        124        122         88
+  is expanded into a "C3D8  E " element with topology:
+        590        593        587        485        592        595        589        487
+
+ ELEMENT           49 with label "CPE4    " and with nodes:
+         90        125        128        104
+  is expanded into a "C3D8  E " element with topology:
+        491        596        605        533        493        598        607        535
+
+ ELEMENT           50 with label "CPE4    " and with nodes:
+        125         72        126        128
+  is expanded into a "C3D8  E " element with topology:
+        596        437        599        605        598        439        601        607
+
+ ELEMENT           51 with label "CPE4    " and with nodes:
+        128        126         91        127
+  is expanded into a "C3D8  E " element with topology:
+        605        599        494        602        607        601        496        604
+
+ ELEMENT           52 with label "CPE4    " and with nodes:
+        104        128        127         95
+  is expanded into a "C3D8  E " element with topology:
+        533        605        602        506        535        607        604        508
+
+ ELEMENT           53 with label "CPE4    " and with nodes:
+         87        129        131        120
+  is expanded into a "C3D8  E " element with topology:
+        482        608        614        581        484        610        616        583
+
+ ELEMENT           54 with label "CPE4    " and with nodes:
+        129         95        127        131
+  is expanded into a "C3D8  E " element with topology:
+        608        506        602        614        610        508        604        616
+
+ ELEMENT           55 with label "CPE4    " and with nodes:
+        131        127         91        130
+  is expanded into a "C3D8  E " element with topology:
+        614        602        494        611        616        604        496        613
+
+ ELEMENT           56 with label "CPE4    " and with nodes:
+        120        131        130         71
+  is expanded into a "C3D8  E " element with topology:
+        581        614        611        434        583        616        613        436
+
+ ELEMENT           57 with label "CPE4    " and with nodes:
+         81        116        134        133
+  is expanded into a "C3D8  E " element with topology:
+        464        569        623        620        466        571        625        622
+
+ ELEMENT           58 with label "CPE4    " and with nodes:
+        116         88        122        134
+  is expanded into a "C3D8  E " element with topology:
+        569        485        587        623        571        487        589        625
+
+ ELEMENT           59 with label "CPE4    " and with nodes:
+        134        122         75        132
+  is expanded into a "C3D8  E " element with topology:
+        623        587        446        617        625        589        448        619
+
+ ELEMENT           60 with label "CPE4    " and with nodes:
+        133        134        132         82
+  is expanded into a "C3D8  E " element with topology:
+        620        623        617        467        622        625        619        469
+
+ ELEMENT           61 with label "CPE4    " and with nodes:
+          9        135        137          8
+  is expanded into a "C3D8  E " element with topology:
+        248        626        632        245        250        628        634        247
+
+ ELEMENT           62 with label "CPE4    " and with nodes:
+        135         85        136        137
+  is expanded into a "C3D8  E " element with topology:
+        626        476        629        632        628        478        631        634
+
+ ELEMENT           63 with label "CPE4    " and with nodes:
+        137        136         67         68
+  is expanded into a "C3D8  E " element with topology:
+        632        629        422        425        634        631        424        427
+
+ ELEMENT           64 with label "CPE4    " and with nodes:
+          8        137         68          1
+  is expanded into a "C3D8  E " element with topology:
+        245        632        425        224        247        634        427        226
+
+ ELEMENT           65 with label "CPE4    " and with nodes:
+         89        138        139        111
+  is expanded into a "C3D8  E " element with topology:
+        488        635        638        554        490        637        640        556
+
+ ELEMENT           66 with label "CPE4    " and with nodes:
+        138         37         38        139
+  is expanded into a "C3D8  E " element with topology:
+        635        332        335        638        637        334        337        640
+
+ ELEMENT           67 with label "CPE4    " and with nodes:
+        139         38         39        113
+  is expanded into a "C3D8  E " element with topology:
+        638        335        338        560        640        337        340        562
+
+ ELEMENT           68 with label "CPE4    " and with nodes:
+        111        139        113         76
+  is expanded into a "C3D8  E " element with topology:
+        554        638        560        449        556        640        562        451
+
+ ELEMENT           69 with label "CPE4    " and with nodes:
+         74        140        142        141
+  is expanded into a "C3D8  E " element with topology:
+        443        641        647        644        445        643        649        646
+
+ ELEMENT           70 with label "CPE4    " and with nodes:
+        140         35         36        142
+  is expanded into a "C3D8  E " element with topology:
+        641        326        329        647        643        328        331        649
+
+ ELEMENT           71 with label "CPE4    " and with nodes:
+        142         36         37        138
+  is expanded into a "C3D8  E " element with topology:
+        647        329        332        635        649        331        334        637
+
+ ELEMENT           72 with label "CPE4    " and with nodes:
+        141        142        138         89
+  is expanded into a "C3D8  E " element with topology:
+        644        647        635        488        646        649        637        490
+
+ ELEMENT           73 with label "CPE4    " and with nodes:
+         85        135        145        144
+  is expanded into a "C3D8  E " element with topology:
+        476        626        656        653        478        628        658        655
+
+ ELEMENT           74 with label "CPE4    " and with nodes:
+        135          9         10        145
+  is expanded into a "C3D8  E " element with topology:
+        626        248        251        656        628        250        253        658
+
+ ELEMENT           75 with label "CPE4    " and with nodes:
+        145         10         11        143
+  is expanded into a "C3D8  E " element with topology:
+        656        251        254        650        658        253        256        652
+
+ ELEMENT           76 with label "CPE4    " and with nodes:
+        144        145        143         78
+  is expanded into a "C3D8  E " element with topology:
+        653        656        650        455        655        658        652        457
+
+ ELEMENT           77 with label "CPE4    " and with nodes:
+         81        146        147        117
+  is expanded into a "C3D8  E " element with topology:
+        464        659        662        572        466        661        664        574
+
+ ELEMENT           78 with label "CPE4    " and with nodes:
+        146         33         34        147
+  is expanded into a "C3D8  E " element with topology:
+        659        320        323        662        661        322        325        664
+
+ ELEMENT           79 with label "CPE4    " and with nodes:
+        147         34         35        140
+  is expanded into a "C3D8  E " element with topology:
+        662        323        326        641        664        325        328        643
+
+ ELEMENT           80 with label "CPE4    " and with nodes:
+        117        147        140         74
+  is expanded into a "C3D8  E " element with topology:
+        572        662        641        443        574        664        643        445
+
+ ELEMENT           81 with label "CPE4    " and with nodes:
+         78        143        150        149
+  is expanded into a "C3D8  E " element with topology:
+        455        650        671        668        457        652        673        670
+
+ ELEMENT           82 with label "CPE4    " and with nodes:
+        143         11         12        150
+  is expanded into a "C3D8  E " element with topology:
+        650        254        257        671        652        256        259        673
+
+ ELEMENT           83 with label "CPE4    " and with nodes:
+        150         12         13        148
+  is expanded into a "C3D8  E " element with topology:
+        671        257        260        665        673        259        262        667
+
+ ELEMENT           84 with label "CPE4    " and with nodes:
+        149        150        148         73
+  is expanded into a "C3D8  E " element with topology:
+        668        671        665        440        670        673        667        442
+
+ ELEMENT           85 with label "CPE4    " and with nodes:
+         75        121        153        152
+  is expanded into a "C3D8  E " element with topology:
+        446        584        680        677        448        586        682        679
+
+ ELEMENT           86 with label "CPE4    " and with nodes:
+        121         71        151        153
+  is expanded into a "C3D8  E " element with topology:
+        584        434        674        680        586        436        676        682
+
+ ELEMENT           87 with label "CPE4    " and with nodes:
+        153        151         24         25
+  is expanded into a "C3D8  E " element with topology:
+        680        674        293        296        682        676        295        298
+
+ ELEMENT           88 with label "CPE4    " and with nodes:
+        152        153         25         26
+  is expanded into a "C3D8  E " element with topology:
+        677        680        296        299        679        682        298        301
+
+ ELEMENT           89 with label "CPE4    " and with nodes:
+         91        154        155        130
+  is expanded into a "C3D8  E " element with topology:
+        494        683        686        611        496        685        688        613
+
+ ELEMENT           90 with label "CPE4    " and with nodes:
+        154         22         23        155
+  is expanded into a "C3D8  E " element with topology:
+        683        287        290        686        685        289        292        688
+
+ ELEMENT           91 with label "CPE4    " and with nodes:
+        155         23         24        151
+  is expanded into a "C3D8  E " element with topology:
+        686        290        293        674        688        292        295        676
+
+ ELEMENT           92 with label "CPE4    " and with nodes:
+        130        155        151         71
+  is expanded into a "C3D8  E " element with topology:
+        611        686        674        434        613        688        676        436
+
+ ELEMENT           93 with label "CPE4    " and with nodes:
+         72        156        157        126
+  is expanded into a "C3D8  E " element with topology:
+        437        689        692        599        439        691        694        601
+
+ ELEMENT           94 with label "CPE4    " and with nodes:
+        156         20         21        157
+  is expanded into a "C3D8  E " element with topology:
+        689        281        284        692        691        283        286        694
+
+ ELEMENT           95 with label "CPE4    " and with nodes:
+        157         21         22        154
+  is expanded into a "C3D8  E " element with topology:
+        692        284        287        683        694        286        289        685
+
+ ELEMENT           96 with label "CPE4    " and with nodes:
+        126        157        154         91
+  is expanded into a "C3D8  E " element with topology:
+        599        692        683        494        601        694        685        496
+
+ ELEMENT           97 with label "CPE4    " and with nodes:
+         73        148        160        159
+  is expanded into a "C3D8  E " element with topology:
+        440        665        701        698        442        667        703        700
+
+ ELEMENT           98 with label "CPE4    " and with nodes:
+        148         13         14        160
+  is expanded into a "C3D8  E " element with topology:
+        665        260        263        701        667        262        265        703
+
+ ELEMENT           99 with label "CPE4    " and with nodes:
+        160         14         15        158
+  is expanded into a "C3D8  E " element with topology:
+        701        263        266        695        703        265        268        697
+
+ ELEMENT          100 with label "CPE4    " and with nodes:
+        159        160        158         90
+  is expanded into a "C3D8  E " element with topology:
+        698        701        695        491        700        703        697        493
+
+ ELEMENT          101 with label "CPE4    " and with nodes:
+         82        161        162        133
+  is expanded into a "C3D8  E " element with topology:
+        467        704        707        620        469        706        709        622
+
+ ELEMENT          102 with label "CPE4    " and with nodes:
+        161         31         32        162
+  is expanded into a "C3D8  E " element with topology:
+        704        314        317        707        706        316        319        709
+
+ ELEMENT          103 with label "CPE4    " and with nodes:
+        162         32         33        146
+  is expanded into a "C3D8  E " element with topology:
+        707        317        320        659        709        319        322        661
+
+ ELEMENT          104 with label "CPE4    " and with nodes:
+        133        162        146         81
+  is expanded into a "C3D8  E " element with topology:
+        620        707        659        464        622        709        661        466
+
+ ELEMENT          105 with label "CPE4    " and with nodes:
+         82        132        164        163
+  is expanded into a "C3D8  E " element with topology:
+        467        617        713        710        469        619        715        712
+
+ ELEMENT          106 with label "CPE4    " and with nodes:
+        132         75        152        164
+  is expanded into a "C3D8  E " element with topology:
+        617        446        677        713        619        448        679        715
+
+ ELEMENT          107 with label "CPE4    " and with nodes:
+        164        152         26         27
+  is expanded into a "C3D8  E " element with topology:
+        713        677        299        302        715        679        301        304
+
+ ELEMENT          108 with label "CPE4    " and with nodes:
+        163        164         27         28
+  is expanded into a "C3D8  E " element with topology:
+        710        713        302        305        712        715        304        307
+
+ ELEMENT          109 with label "CPE4    " and with nodes:
+         90        158        166        125
+  is expanded into a "C3D8  E " element with topology:
+        491        695        719        596        493        697        721        598
+
+ ELEMENT          110 with label "CPE4    " and with nodes:
+        158         15         16        166
+  is expanded into a "C3D8  E " element with topology:
+        695        266        269        719        697        268        271        721
+
+ ELEMENT          111 with label "CPE4    " and with nodes:
+        166         16         17        165
+  is expanded into a "C3D8  E " element with topology:
+        719        269        272        716        721        271        274        718
+
+ ELEMENT          112 with label "CPE4    " and with nodes:
+        125        166        165         72
+  is expanded into a "C3D8  E " element with topology:
+        596        719        716        437        598        721        718        439
+
+ ELEMENT          113 with label "CPE4    " and with nodes:
+         44         45        169        100
+  is expanded into a "C3D8  E " element with topology:
+        353        356        728        521        355        358        730        523
+
+ ELEMENT          114 with label "CPE4    " and with nodes:
+         45         46        167        169
+  is expanded into a "C3D8  E " element with topology:
+        356        359        722        728        358        361        724        730
+
+ ELEMENT          115 with label "CPE4    " and with nodes:
+        169        167         77        168
+  is expanded into a "C3D8  E " element with topology:
+        728        722        452        725        730        724        454        727
+
+ ELEMENT          116 with label "CPE4    " and with nodes:
+        100        169        168         93
+  is expanded into a "C3D8  E " element with topology:
+        521        728        725        500        523        730        727        502
+
+ ELEMENT          117 with label "CPE4    " and with nodes:
+         90        107        172        159
+  is expanded into a "C3D8  E " element with topology:
+        491        542        737        698        493        544        739        700
+
+ ELEMENT          118 with label "CPE4    " and with nodes:
+        107         99        170        172
+  is expanded into a "C3D8  E " element with topology:
+        542        518        731        737        544        520        733        739
+
+ ELEMENT          119 with label "CPE4    " and with nodes:
+        172        170         98        171
+  is expanded into a "C3D8  E " element with topology:
+        737        731        515        734        739        733        517        736
+
+ ELEMENT          120 with label "CPE4    " and with nodes:
+        159        172        171         73
+  is expanded into a "C3D8  E " element with topology:
+        698        737        734        440        700        739        736        442
+
+ ELEMENT          121 with label "CPE4    " and with nodes:
+         80        173        177        176
+  is expanded into a "C3D8  E " element with topology:
+        461        740        752        749        463        742        754        751
+
+ ELEMENT          122 with label "CPE4    " and with nodes:
+        173         83        174        177
+  is expanded into a "C3D8  E " element with topology:
+        740        470        743        752        742        472        745        754
+
+ ELEMENT          123 with label "CPE4    " and with nodes:
+        177        174         94        175
+  is expanded into a "C3D8  E " element with topology:
+        752        743        503        746        754        745        505        748
+
+ ELEMENT          124 with label "CPE4    " and with nodes:
+        176        177        175         98
+  is expanded into a "C3D8  E " element with topology:
+        749        752        746        515        751        754        748        517
+
+ ELEMENT          125 with label "CPE4    " and with nodes:
+         72        165        178        156
+  is expanded into a "C3D8  E " element with topology:
+        437        716        755        689        439        718        757        691
+
+ ELEMENT          126 with label "CPE4    " and with nodes:
+        165         17         18        178
+  is expanded into a "C3D8  E " element with topology:
+        716        272        275        755        718        274        277        757
+
+ ELEMENT          127 with label "CPE4    " and with nodes:
+        178         18          2         19
+  is expanded into a "C3D8  E " element with topology:
+        755        275        227        278        757        277        229        280
+
+ ELEMENT          128 with label "CPE4    " and with nodes:
+        156        178         19         20
+  is expanded into a "C3D8  E " element with topology:
+        689        755        278        281        691        757        280        283
+
+ ELEMENT          129 with label "CPE4    " and with nodes:
+         82        163        179        161
+  is expanded into a "C3D8  E " element with topology:
+        467        710        758        704        469        712        760        706
+
+ ELEMENT          130 with label "CPE4    " and with nodes:
+        163         28         29        179
+  is expanded into a "C3D8  E " element with topology:
+        710        305        308        758        712        307        310        760
+
+ ELEMENT          131 with label "CPE4    " and with nodes:
+        179         29          3         30
+  is expanded into a "C3D8  E " element with topology:
+        758        308        230        311        760        310        232        313
+
+ ELEMENT          132 with label "CPE4    " and with nodes:
+        161        179         30         31
+  is expanded into a "C3D8  E " element with topology:
+        704        758        311        314        706        760        313        316
+
+ ELEMENT          133 with label "CPE4    " and with nodes:
+         60         61        182        181
+  is expanded into a "C3D8  E " element with topology:
+        401        404        767        764        403        406        769        766
+
+ ELEMENT          134 with label "CPE4    " and with nodes:
+         61          6         62        182
+  is expanded into a "C3D8  E " element with topology:
+        404        239        407        767        406        241        409        769
+
+ ELEMENT          135 with label "CPE4    " and with nodes:
+        182         62         63        180
+  is expanded into a "C3D8  E " element with topology:
+        767        407        410        761        769        409        412        763
+
+ ELEMENT          136 with label "CPE4    " and with nodes:
+        181        182        180         84
+  is expanded into a "C3D8  E " element with topology:
+        764        767        761        473        766        769        763        475
+
+ ELEMENT          137 with label "CPE4    " and with nodes:
+         92        183        186        185
+  is expanded into a "C3D8  E " element with topology:
+        497        770        779        776        499        772        781        778
+
+ ELEMENT          138 with label "CPE4    " and with nodes:
+        183         77        184        186
+  is expanded into a "C3D8  E " element with topology:
+        770        452        773        779        772        454        775        781
+
+ ELEMENT          139 with label "CPE4    " and with nodes:
+        186        184         49         50
+  is expanded into a "C3D8  E " element with topology:
+        779        773        368        371        781        775        370        373
+
+ ELEMENT          140 with label "CPE4    " and with nodes:
+        185        186         50         51
+  is expanded into a "C3D8  E " element with topology:
+        776        779        371        374        778        781        373        376
+
+ ELEMENT          141 with label "CPE4    " and with nodes:
+         95        129        189        105
+  is expanded into a "C3D8  E " element with topology:
+        506        608        788        536        508        610        790        538
+
+ ELEMENT          142 with label "CPE4    " and with nodes:
+        129         87        187        189
+  is expanded into a "C3D8  E " element with topology:
+        608        482        782        788        610        484        784        790
+
+ ELEMENT          143 with label "CPE4    " and with nodes:
+        189        187          7        188
+  is expanded into a "C3D8  E " element with topology:
+        788        782        242        785        790        784        244        787
+
+ ELEMENT          144 with label "CPE4    " and with nodes:
+        105        189        188         69
+  is expanded into a "C3D8  E " element with topology:
+        536        788        785        428        538        790        787        430
+
+ ELEMENT          145 with label "CPE4    " and with nodes:
+         88        115        191        123
+  is expanded into a "C3D8  E " element with topology:
+        485        566        794        590        487        568        796        592
+
+ ELEMENT          146 with label "CPE4    " and with nodes:
+        115         86        190        191
+  is expanded into a "C3D8  E " element with topology:
+        566        479        791        794        568        481        793        796
+
+ ELEMENT          147 with label "CPE4    " and with nodes:
+        191        190          7        187
+  is expanded into a "C3D8  E " element with topology:
+        794        791        242        782        796        793        244        784
+
+ ELEMENT          148 with label "CPE4    " and with nodes:
+        123        191        187         87
+  is expanded into a "C3D8  E " element with topology:
+        590        794        782        482        592        796        784        484
+
+ ELEMENT          149 with label "CPE4    " and with nodes:
+         49        184        192         48
+  is expanded into a "C3D8  E " element with topology:
+        368        773        797        365        370        775        799        367
+
+ ELEMENT          150 with label "CPE4    " and with nodes:
+        184         77        167        192
+  is expanded into a "C3D8  E " element with topology:
+        773        452        722        797        775        454        724        799
+
+ ELEMENT          151 with label "CPE4    " and with nodes:
+        192        167         46         47
+  is expanded into a "C3D8  E " element with topology:
+        797        722        359        362        799        724        361        364
+
+ ELEMENT          152 with label "CPE4    " and with nodes:
+         48        192         47          5
+  is expanded into a "C3D8  E " element with topology:
+        365        797        362        236        367        799        364        238
+
+ ELEMENT          153 with label "CPE4    " and with nodes:
+         85        193        195        136
+  is expanded into a "C3D8  E " element with topology:
+        476        800        806        629        478        802        808        631
+
+ ELEMENT          154 with label "CPE4    " and with nodes:
+        193         79        194        195
+  is expanded into a "C3D8  E " element with topology:
+        800        458        803        806        802        460        805        808
+
+ ELEMENT          155 with label "CPE4    " and with nodes:
+        195        194         65         66
+  is expanded into a "C3D8  E " element with topology:
+        806        803        416        419        808        805        418        421
+
+ ELEMENT          156 with label "CPE4    " and with nodes:
+        136        195         66         67
+  is expanded into a "C3D8  E " element with topology:
+        629        806        419        422        631        808        421        424
+
+ ELEMENT          157 with label "CPE4    " and with nodes:
+         58         59        198        197
+  is expanded into a "C3D8  E " element with topology:
+        395        398        815        812        397        400        817        814
+
+ ELEMENT          158 with label "CPE4    " and with nodes:
+         59         60        181        198
+  is expanded into a "C3D8  E " element with topology:
+        398        401        764        815        400        403        766        817
+
+ ELEMENT          159 with label "CPE4    " and with nodes:
+        198        181         84        196
+  is expanded into a "C3D8  E " element with topology:
+        815        764        473        809        817        766        475        811
+
+ ELEMENT          160 with label "CPE4    " and with nodes:
+        197        198        196         83
+  is expanded into a "C3D8  E " element with topology:
+        812        815        809        470        814        817        811        472
+
+ ELEMENT          161 with label "CPE4    " and with nodes:
+         92        185        201        200
+  is expanded into a "C3D8  E " element with topology:
+        497        776        824        821        499        778        826        823
+
+ ELEMENT          162 with label "CPE4    " and with nodes:
+        185         51         52        201
+  is expanded into a "C3D8  E " element with topology:
+        776        374        377        824        778        376        379        826
+
+ ELEMENT          163 with label "CPE4    " and with nodes:
+        201         52         53        199
+  is expanded into a "C3D8  E " element with topology:
+        824        377        380        818        826        379        382        820
+
+ ELEMENT          164 with label "CPE4    " and with nodes:
+        200        201        199         70
+  is expanded into a "C3D8  E " element with topology:
+        821        824        818        431        823        826        820        433
+
+ ELEMENT          165 with label "CPE4    " and with nodes:
+         86        202        203        190
+  is expanded into a "C3D8  E " element with topology:
+        479        827        830        791        481        829        832        793
+
+ ELEMENT          166 with label "CPE4    " and with nodes:
+        202         70        199        203
+  is expanded into a "C3D8  E " element with topology:
+        827        431        818        830        829        433        820        832
+
+ ELEMENT          167 with label "CPE4    " and with nodes:
+        203        199         53         54
+  is expanded into a "C3D8  E " element with topology:
+        830        818        380        383        832        820        382        385
+
+ ELEMENT          168 with label "CPE4    " and with nodes:
+        190        203         54          7
+  is expanded into a "C3D8  E " element with topology:
+        791        830        383        242        793        832        385        244
+
+ ELEMENT          169 with label "CPE4    " and with nodes:
+         65        194        205         64
+  is expanded into a "C3D8  E " element with topology:
+        416        803        836        413        418        805        838        415
+
+ ELEMENT          170 with label "CPE4    " and with nodes:
+        194         79        204        205
+  is expanded into a "C3D8  E " element with topology:
+        803        458        833        836        805        460        835        838
+
+ ELEMENT          171 with label "CPE4    " and with nodes:
+        205        204         84        180
+  is expanded into a "C3D8  E " element with topology:
+        836        833        473        761        838        835        475        763
+
+ ELEMENT          172 with label "CPE4    " and with nodes:
+         64        205        180         63
+  is expanded into a "C3D8  E " element with topology:
+        413        836        761        410        415        838        763        412
+
+ ELEMENT          173 with label "CPE4    " and with nodes:
+         56         57        207        206
+  is expanded into a "C3D8  E " element with topology:
+        389        392        842        839        391        394        844        841
+
+ ELEMENT          174 with label "CPE4    " and with nodes:
+         57         58        197        207
+  is expanded into a "C3D8  E " element with topology:
+        392        395        812        842        394        397        814        844
+
+ ELEMENT          175 with label "CPE4    " and with nodes:
+        207        197         83        173
+  is expanded into a "C3D8  E " element with topology:
+        842        812        470        740        844        814        472        742
+
+ ELEMENT          176 with label "CPE4    " and with nodes:
+        206        207        173         80
+  is expanded into a "C3D8  E " element with topology:
+        839        842        740        461        841        844        742        463
+
+ ELEMENT          177 with label "CPE4    " and with nodes:
+         97        109        209        208
+  is expanded into a "C3D8  E " element with topology:
+        512        548        848        845        514        550        850        847
+
+ ELEMENT          178 with label "CPE4    " and with nodes:
+        109         93        168        209
+  is expanded into a "C3D8  E " element with topology:
+        548        500        725        848        550        502        727        850
+
+ ELEMENT          179 with label "CPE4    " and with nodes:
+        209        168         77        183
+  is expanded into a "C3D8  E " element with topology:
+        848        725        452        770        850        727        454        772
+
+ ELEMENT          180 with label "CPE4    " and with nodes:
+        208        209        183         92
+  is expanded into a "C3D8  E " element with topology:
+        845        848        770        497        847        850        772        499
+
+ ELEMENT          181 with label "CPE4    " and with nodes:
+         94        174        211        210
+  is expanded into a "C3D8  E " element with topology:
+        503        743        854        851        505        745        856        853
+
+ ELEMENT          182 with label "CPE4    " and with nodes:
+        174         83        196        211
+  is expanded into a "C3D8  E " element with topology:
+        743        470        809        854        745        472        811        856
+
+ ELEMENT          183 with label "CPE4    " and with nodes:
+        211        196         84        204
+  is expanded into a "C3D8  E " element with topology:
+        854        809        473        833        856        811        475        835
+
+ ELEMENT          184 with label "CPE4    " and with nodes:
+        210        211        204         79
+  is expanded into a "C3D8  E " element with topology:
+        851        854        833        458        853        856        835        460
+
+ ELEMENT          185 with label "CPE4    " and with nodes:
+          7         55        213        188
+  is expanded into a "C3D8  E " element with topology:
+        242        386        860        785        244        388        862        787
+
+ ELEMENT          186 with label "CPE4    " and with nodes:
+         55         56        206        213
+  is expanded into a "C3D8  E " element with topology:
+        386        389        839        860        388        391        841        862
+
+ ELEMENT          187 with label "CPE4    " and with nodes:
+        213        206         80        212
+  is expanded into a "C3D8  E " element with topology:
+        860        839        461        857        862        841        463        859
+
+ ELEMENT          188 with label "CPE4    " and with nodes:
+        188        213        212         69
+  is expanded into a "C3D8  E " element with topology:
+        785        860        857        428        787        862        859        430
+
+ ELEMENT          189 with label "CPE4    " and with nodes:
+         74        141        216        215
+  is expanded into a "C3D8  E " element with topology:
+        443        644        869        866        445        646        871        868
+
+ ELEMENT          190 with label "CPE4    " and with nodes:
+        141         89        110        216
+  is expanded into a "C3D8  E " element with topology:
+        644        488        551        869        646        490        553        871
+
+ ELEMENT          191 with label "CPE4    " and with nodes:
+        216        110         97        214
+  is expanded into a "C3D8  E " element with topology:
+        869        551        512        863        871        553        514        865
+
+ ELEMENT          192 with label "CPE4    " and with nodes:
+        215        216        214         96
+  is expanded into a "C3D8  E " element with topology:
+        866        869        863        509        868        871        865        511
+
+ ELEMENT          193 with label "CPE4    " and with nodes:
+         78        217        218        144
+  is expanded into a "C3D8  E " element with topology:
+        455        872        875        653        457        874        877        655
+
+ ELEMENT          194 with label "CPE4    " and with nodes:
+        217         94        210        218
+  is expanded into a "C3D8  E " element with topology:
+        872        503        851        875        874        505        853        877
+
+ ELEMENT          195 with label "CPE4    " and with nodes:
+        218        210         79        193
+  is expanded into a "C3D8  E " element with topology:
+        875        851        458        800        877        853        460        802
+
+ ELEMENT          196 with label "CPE4    " and with nodes:
+        144        218        193         85
+  is expanded into a "C3D8  E " element with topology:
+        653        875        800        476        655        877        802        478
+
+ ELEMENT          197 with label "CPE4    " and with nodes:
+         99        106        219        170
+  is expanded into a "C3D8  E " element with topology:
+        518        539        878        731        520        541        880        733
+
+ ELEMENT          198 with label "CPE4    " and with nodes:
+        106         69        212        219
+  is expanded into a "C3D8  E " element with topology:
+        539        428        857        878        541        430        859        880
+
+ ELEMENT          199 with label "CPE4    " and with nodes:
+        219        212         80        176
+  is expanded into a "C3D8  E " element with topology:
+        878        857        461        749        880        859        463        751
+
+ ELEMENT          200 with label "CPE4    " and with nodes:
+        170        219        176         98
+  is expanded into a "C3D8  E " element with topology:
+        731        878        749        515        733        880        751        517
+
+ ELEMENT          201 with label "CPE4    " and with nodes:
+         73        171        220        149
+  is expanded into a "C3D8  E " element with topology:
+        440        734        881        668        442        736        883        670
+
+ ELEMENT          202 with label "CPE4    " and with nodes:
+        171         98        175        220
+  is expanded into a "C3D8  E " element with topology:
+        734        515        746        881        736        517        748        883
+
+ ELEMENT          203 with label "CPE4    " and with nodes:
+        220        175         94        217
+  is expanded into a "C3D8  E " element with topology:
+        881        746        503        872        883        748        505        874
+
+ ELEMENT          204 with label "CPE4    " and with nodes:
+        149        220        217         78
+  is expanded into a "C3D8  E " element with topology:
+        668        881        872        455        670        883        874        457
+
+ ELEMENT          205 with label "CPE4    " and with nodes:
+         96        214        222        221
+  is expanded into a "C3D8  E " element with topology:
+        509        863        887        884        511        865        889        886
+
+ ELEMENT          206 with label "CPE4    " and with nodes:
+        214         97        208        222
+  is expanded into a "C3D8  E " element with topology:
+        863        512        845        887        865        514        847        889
+
+ ELEMENT          207 with label "CPE4    " and with nodes:
+        222        208         92        200
+  is expanded into a "C3D8  E " element with topology:
+        887        845        497        821        889        847        499        823
+
+ ELEMENT          208 with label "CPE4    " and with nodes:
+        221        222        200         70
+  is expanded into a "C3D8  E " element with topology:
+        884        887        821        431        886        889        823        433
+
+ ELEMENT          209 with label "CPE4    " and with nodes:
+         70        202        223        221
+  is expanded into a "C3D8  E " element with topology:
+        431        827        890        884        433        829        892        886
+
+ ELEMENT          210 with label "CPE4    " and with nodes:
+        202         86        118        223
+  is expanded into a "C3D8  E " element with topology:
+        827        479        575        890        829        481        577        892
+
+ ELEMENT          211 with label "CPE4    " and with nodes:
+        223        118         74        215
+  is expanded into a "C3D8  E " element with topology:
+        890        575        443        866        892        577        445        868
+
+ ELEMENT          212 with label "CPE4    " and with nodes:
+        221        223        215         96
+  is expanded into a "C3D8  E " element with topology:
+        884        890        866        509        886        892        868        511
+
